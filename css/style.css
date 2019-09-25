@@ -304,9 +304,22 @@ h2{
     .header{
         display: block;
     }
+
+    .logo{
+        text-align: center;
+    }
+
     .nav-ul{
         display: block;
+        padding: 0;
     }
+
+    .nav-item{
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    
 }
 
 
