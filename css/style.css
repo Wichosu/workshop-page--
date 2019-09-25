@@ -1,0 +1,289 @@
+:root{
+    --dark-primary-color: #AFB42B;
+    --light-primary-color: #F0F4C3;
+    --primary-color: #CDDC39;
+    --light-text: #ffffff;
+    --text-icons: #212121;
+    --accent-color: #009688;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --divider-color: #BDBDBD;
+    --title-text:'Lexend Deca', sans-serif;
+    --body-text: 'Roboto' , sans-serif;
+    --body-color: #f9fbe7;
+}
+
+html,body{
+    margin: 0;
+}
+
+body{
+    font-family: var(--body-text);
+    background: var(--body-color);
+    margin: 0;
+    padding: 0; 
+}
+
+h1, h2, h3, h5{
+    font-family: var(--title-text);
+    font-weight: normal;
+}
+
+h2{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 36px;
+}
+
+/* ?Clases Utilitarias */
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: inherit;
+    /* border: 1px solid red; */
+}
+
+.header{
+    background: var(--dark-primary-color);
+    color: var(--light-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header li{
+    list-style: none;
+    padding-left: 15px;
+}
+
+.header a{
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.hero{
+    height: 300px;
+    background: var(--primary-color);
+    /* background-image: url("../img/");
+    background-size: 1000px 300px;
+    background-repeat: no-repeat;
+    background-position-x: center; */
+    display: flex;
+    align-items: center;
+}
+
+.hero-image{
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero h1{
+    color: var(--light-text);
+    font-size: 29px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    margin: 0;
+}
+
+.hero strong{
+    color: var(--accent-color);
+    font-weight: normal;
+}
+
+.portfolio{
+    padding: 20px;  
+}
+
+.project{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-details{
+    width: 500px;
+}
+
+.project-title{
+    font-size: 30px;
+    margin: 0;
+}
+
+.project-subtitle, .project-date, .project-url{
+    margin: 10px 0px;
+}
+
+.project-description{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.project-imageContainer{
+    width: 500px;
+}
+
+.experience-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience{
+    width: 480px;
+    margin: 10px;
+    background: var(--light-primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.experience-imageContainer{
+    margin: 0;
+}
+
+.experience-image{
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.experience-details{
+    background: white;
+    margin: 20px 30px;
+    margin-top: -45px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.experience-description{
+    text-align: justify;
+}
+
+.experience-url{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 350ms all;
+}
+
+.experience-url:hover{
+    color: white;
+    background: var(--primary-color);
+}
+
+.contact{
+    background: var(--primary-color);
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form label{
+    display: block;
+}
+
+.social-link{
+    /* border: 1px solid white; */
+    width: 50px;
+    height: 50px;
+    padding: 0px 4px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.twitter{
+    background-image: url(../img/twitter-logo-button\ white.svg);
+    background-size: 50px 50px;
+    transition: 350ms all;
+}
+
+.twitter:hover{
+    background-image: url(../img/twitter-logo-button\ black.svg);
+}
+
+.facebook{
+    background-image: url(../img/facebook-logo-button\ white.svg);
+    background-size: 50px 50px;
+    transition: 350ms all;
+}
+
+.facebook:hover{
+    background-image: url(../img/facebook-logo-button\ black.svg);
+}
+
+.instagram{
+    background-image: url(../img/instagram-logo\ white.svg);
+    background-size: 50px 50px;
+    transition: 350ms all;
+}
+
+.instagram:hover{
+    background-image: url(../img/instagram-logo\ black.svg);
+}
+
+.youtube{
+    background-image: url(../img/youtube\ white.svg);
+    background-size: 50px 50px;
+    transition: 350ms all;
+}
+
+.youtube:hover{
+    background-image: url(../img/youtube\ black.svg);
+}
+
+.form-email{
+    border: 1px solid gray;
+    padding: 5px 20px;
+    padding-left: 25px;
+    border-radius: 5px;
+    background-image: url(../img/envelope.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    margin: 10px 0px;
+}
+
+.button{
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: var(--divider-color);
+    color: var(--light-text);
+    padding: 0 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--light-text);
+}
