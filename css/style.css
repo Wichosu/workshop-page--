@@ -45,6 +45,7 @@ h2{
     justify-content: inherit;
     align-items: inherit;
     flex-wrap: inherit;
+    flex: 1;
     /* border: 1px solid red; */
 }
 
@@ -57,17 +58,17 @@ h2{
     flex-wrap: wrap;
 }
 
-.header ul{
+.nav-ul{
     display: flex;
     justify-content: flex-end;
 }
 
-.header li{
+.nav-item{
     list-style: none;
     padding-left: 15px;
 }
 
-.header a{
+.nav-link{
     color: var(--light-text);
     text-decoration: none;
 }
@@ -300,8 +301,14 @@ h2{
 
 /* ? Tablet */
 @media screen and (max-width: 768px){
-
+    .header{
+        display: block;
+    }
+    .nav-ul{
+        display: block;
+    }
 }
+
 
 @media screen and (max-width: 480px){
 
