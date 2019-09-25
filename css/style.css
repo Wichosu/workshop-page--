@@ -120,7 +120,7 @@ h2{
 }
 
 .project-details{
-    width: 500px;
+    width: 50%;
 }
 
 .project-title{
@@ -138,7 +138,14 @@ h2{
 }
 
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.project-imageContainer-image{
+    width: 100%
 }
 
 .experience-container{
@@ -156,12 +163,12 @@ h2{
 }
 
 .experience-imageContainer{
+    width: 50%;
     margin: 0;
 }
 
 .experience-image{
-    width: 480px;
-    height: 300px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -317,6 +324,14 @@ h2{
     .nav-item{
         text-align: center;
         margin-top: 25px;
+    }
+
+    .project-imageContainer{
+        width: 100%;
+    }
+
+    .project-details{
+        width: 100%;
     }
 
     
