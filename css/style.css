@@ -154,8 +154,8 @@ h2{
 }
 
 .experience{
-    width: 480px;
-    margin: 10px;
+    width: 48%;
+    margin: 1%;
     background: var(--light-primary-color);
     border-radius: 10px;
     overflow: hidden;
@@ -163,12 +163,12 @@ h2{
 }
 
 .experience-imageContainer{
-    width: 50%;
     margin: 0;
 }
 
 .experience-image{
     width: 100%;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -332,6 +332,11 @@ h2{
 
     .project-details{
         width: 100%;
+    }
+
+    /* ? 767px */ 
+    .experience{
+        width: 98%;
     }
 
     
