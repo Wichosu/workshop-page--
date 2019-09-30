@@ -374,12 +374,20 @@ h2{
     
 }
 
-/* ? small */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 420px){
     .hero{
-        font-size: 12px;
         padding: 60px 0px;
     }
+}
+
+@media screen and (max-width: 360px){
+    .hero{
+        font-size: 12px;
+    }
+}
+
+/* ? small */
+@media screen and (max-width: 320px){
     .project-details{
         font-size: 12px;
     }
