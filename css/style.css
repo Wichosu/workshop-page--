@@ -47,6 +47,7 @@ h2{
     flex-wrap: inherit;
     flex: 1;
     flex-direction: inherit;
+    padding: 0 5px;
     /* border: 1px solid red; */
 }
 
@@ -57,6 +58,7 @@ h2{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: 1px solid transparent;
 }
 
 .nav-ul{
