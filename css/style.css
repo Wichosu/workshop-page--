@@ -74,28 +74,24 @@ h2{
 }
 
 .hero{
-    height: 300px;
+    padding: 120px 0;
     background: var(--primary-color);
-    /* background-image: url("../img/");
-    background-size: 1000px 300px;
-    background-repeat: no-repeat;
-    background-position-x: center; */
+    background-image: url("../img/IMG-20190913-WA0017.jpg");
+    background-size: 100% auto;
+    background-position: center;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 20px;
 }
 
-.hero-image{
-    height: 300px;
-    object-fit: cover;
-}
-
-.hero h1{
+.hero-title{
     color: var(--light-text);
     font-size: 29px;
     line-height: 1.5;
     letter-spacing: -.2px;
     margin: 0;
+    font-size: 2em;
 }
 
 .hero strong{
@@ -343,11 +339,21 @@ h2{
 
 /* ? big */
 @media screen and (max-width: 480px){
+    .project-details{
+        font-size: 14px;
+    }
 
+    .hero{
+        font-size: 16px;
+    }
 }
 
 /* ? small */
 @media screen and (max-width: 320px){
+    .hero{
+        font-size: 12px;
+        padding: 60px 0px;
+    }
     .project-details{
         font-size: 12px;
     }
