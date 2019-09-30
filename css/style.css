@@ -366,6 +366,12 @@ h2{
     .social-container{
         margin-top: 10px;
     }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
 
 /* ? small */
@@ -377,4 +383,6 @@ h2{
     .project-details{
         font-size: 12px;
     }
+
+    
 }
