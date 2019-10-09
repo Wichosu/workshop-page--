@@ -90,7 +90,7 @@ h2{
     font-size: 30px;
     background: var(--primary-color);
     color: white;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -358,7 +358,11 @@ h2{
 }
 
 /* ? Tablet */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+    .burger-button{
+        display: flex;
+    }
+    
     .header{
         display: block;
     }
