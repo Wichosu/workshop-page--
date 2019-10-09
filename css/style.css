@@ -362,7 +362,7 @@ h2{
     .burger-button{
         display: flex;
     }
-    
+
     .header{
         display: block;
     }
@@ -371,14 +371,34 @@ h2{
         text-align: center;
     }
 
+    .menu{
+        position: fixed;
+        background: var(--dark-primary-color);
+        z-index: 98;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
     .nav-ul{
-        display: block;
+        display: flex;
         padding: 0;
+        height: inherit;
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .nav-item{
         text-align: center;
         margin-top: 25px;
+        font-size: 24px;
     }
 
     .project-imageContainer{
